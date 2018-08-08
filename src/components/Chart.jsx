@@ -27,11 +27,7 @@ class PricesChart extends React.Component {
 
     constructor(props) {
         super(props)
-
-        this.state = {
-            labels: [],
-            data: []
-        }
+        this.state = { labels: [], data: [] }
     }
 
     componentDidMount() {
@@ -73,7 +69,11 @@ class PricesChart extends React.Component {
                 }
             ]
         }
-        return (<LineChart data={chartData} options={chartOptions} width="600" height="250" redraw />)
+        return (
+            <div className="priceChart">
+                <LineChart data={chartData} options={chartOptions} width="600" height="250" redraw />
+            </div>
+        )
     }
 }
 
