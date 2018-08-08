@@ -24,3 +24,8 @@ p.date{
   text-align: right;
   color: #9E9E9E;
 }
+
+.priceChart {
+  margin: 16pt;
+  text-align: center;
+}
