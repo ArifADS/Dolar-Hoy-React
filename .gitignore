@@ -1,3 +1,4 @@
+.cache/
 .DS_STORE
 node_modules
 *~
@@ -22,3 +23,4 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
+dist/*
