@@ -1,9 +1,9 @@
+import "./css/style.css"
 import React from "react";
 import { render } from "react-dom";
 import PricesList from "./components/PricesList"
 import Chart from "./components/Chart"
-import "./css/style.css"
-import { Grid, Row, Col, Glyphicon } from 'react-bootstrap'
+import { Grid, Row, Col } from 'react-bootstrap'
 import axios from 'axios';
 import moment from 'moment'
 
@@ -31,7 +31,7 @@ class App extends React.Component {
             <Grid>
                 <Row>
                     <Col xs={6} xsOffset={6}>
-                        <Glyphicon glyph="time" /> <p className="date">{dateStr}</p>
+                        <p className="date">{dateStr}</p>
                     </Col>
                 </Row>
                 <Row>
@@ -39,7 +39,7 @@ class App extends React.Component {
                         <PricesList prices={precios} />
                     </Col>
                     <Col md={8}>
-                        <center><Chart /></center>
+                        <Chart />
                     </Col>
                 </Row>
             </Grid>
